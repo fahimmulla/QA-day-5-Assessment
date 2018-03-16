@@ -11,7 +11,7 @@ public class Main {
 		
 		p1.getX();
 		
-		landgrid.grid(p1,gold);
+	    landgrid.grid(p1,gold);
 
 		gold.getX();
 	}

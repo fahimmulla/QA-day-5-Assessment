@@ -37,38 +37,42 @@ public class Player {
 
 
 
-	public void movePositionNorth(int [] [] grid) {
+	public void movetoNorth(int [] [] grid) {
 		grid [x][y] = 0;
-		x = x-1;
-		if ( x == -1 ) {
-			x = x +1;
+		y = y-1;
+		if ( y == -1 ) {
+			y = y +1;
+			return ;
 		}
 		grid [x][y] = 1;
 	}
 		
-		public void movePositionSouth(int [] [] grid) {
+		public void movetoSouth(int [] [] grid) {
 			grid [x][y] = 0;
-			x = x-1;
-			if ( x == -1 ) {
-				x = x +1;
+			y = y+1;
+			if ( y == +1 ) {
+				y = y -1;
+				return ;
 			}
 			grid [x][y] = 1;
 		}
 		
-		public void movePositionEast(int [] [] grid) {
+		public void movetoEast(int [] [] grid) {
 			grid [x][y] = 0;
-			x = x-1;
-			if ( x == -1 ) {
-				x = x +1;
+			x = x+1;
+			if ( x == +1 ) {
+				x = x -1;
+				return ;
 			}
 			grid [x][y] = 1;
 		
 		}
-			public void movePositionWest(int [] [] grid) {
+			public void movetoWest(int [] [] grid) {
 				grid [x][y] = 0;
 				x = x-1;
 				if ( x == -1 ) {
 					x = x +1;
+					return ;
 				}
 				grid [x][y] = 1;
 			
